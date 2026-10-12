@@ -1,0 +1,45 @@
+:root {
+  --cream: #faf6eb;
+  --ink: #0a141d;
+  --yellow: #d9a900;
+  --orange: #ef8739;
+  --pink: #e86a9e;
+  --aqua: #36aeb5;
+  --red: #ee7561;
+  --purple: #a478c0;
+  --accent: var(--red);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; position: relative; isolation: isolate; }
+.territory { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; overflow: hidden; }
+main { width: min(100%, 620px); min-height: 100svh; margin: auto; padding: clamp(66px, 15.8svh, 136px) 20px 56px; text-align: center; }
+h1 { margin: 0; font-weight: 800; letter-spacing: -.065em; line-height: .94; }
+h1 span { display: block; }
+.intro { font-size: clamp(36px, 9.4vw, 66px); letter-spacing: -.06em; line-height: 1.16; white-space: nowrap; }
+.power { color: var(--accent); font-size: clamp(68px, 18.5vw, 122px); font-weight: 900; letter-spacing: -.065em; line-height: .99; transition: color 180ms ease; }
+.ending { font-size: clamp(60px, 15vw, 102px); line-height: .9; }
+h2 { margin: 16px -8px 0; font-size: clamp(15px, 4.4vw, 28px); font-weight: 500; letter-spacing: -.045em; white-space: nowrap; }
+#instructions { font-size: clamp(15px, 3.65vw, 21px); line-height: 1.24; font-weight: 400; letter-spacing: -.025em; margin: 27px auto 0; max-width: 310px; width: 90%; min-height: 3.72em; display: grid; place-items: center; }
+.sound-button { display: grid; place-items: center; position: relative; width: clamp(150px, 47vw, 272px); aspect-ratio: 1; margin: clamp(48px, 12.8vw, 73px) auto 0; padding: 0; border: 0; border-radius: 50%; background: var(--accent); color: var(--ink); cursor: pointer; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; touch-action: none; transition: background-color 180ms ease, transform 200ms ease; -webkit-tap-highlight-color: transparent; }
+.sound-button::before, .sound-button::after { content: ''; position: absolute; border-radius: 50%; pointer-events: none; background: var(--accent); transition: background-color 180ms ease; }
+.sound-button::before { inset: -9.5%; opacity: .3; z-index: -1; }
+.sound-button::after { inset: -19%; opacity: .13; border: 1px solid var(--accent); z-index: -2; }
+.sound-button .speaker { width: 32%; stroke: currentColor; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round; }
+.sound-button:focus-visible { outline: 3px solid var(--ink); outline-offset: 9px; }
+.sound-button.is-holding { animation: breathe 2.2s ease-in-out infinite; }
+.sound-button.is-holding::after { animation: breathe 2.2s ease-in-out infinite reverse; }
+#status { min-height: 2.5em; margin: clamp(47px, 12vw, 69px) 0 0; font-size: 12px; line-height: 1.4; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@keyframes breathe { 50% { transform: scale(1.035); } }
+@media (min-width: 700px) { main { padding-top: clamp(58px, 9svh, 110px); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+
+/* El anillo comparte exactamente el acento del título y del botón. */
+.sound-button .progress-ring { position: absolute; inset: -19%; width: 138%; height: 138%; overflow: visible; fill: none; stroke: var(--accent); stroke-width: 1.4; pointer-events: none; transition: stroke 180ms ease; }
+.progress-guide { opacity: .14; }
+.progress-trace { stroke-dasharray: 100 100; stroke-dashoffset: 100; stroke-linecap: butt; }
+
