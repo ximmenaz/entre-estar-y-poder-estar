@@ -1,0 +1,917 @@
+{
+  "version": 3,
+  "estado": "observaciones_cualitativas_sin_niveles_cuantificados",
+  "nota": "Las ilustraciones originales se conservan completas. Las observaciones del texto del proyecto son cualitativas; no se infieren niveles, fechas ni ubicaciones a partir de imágenes o nombres de archivo.",
+  "tipos_fuente": [
+    "oficial",
+    "observacion_propia",
+    "interpretacion"
+  ],
+  "niveles_permitidos": [
+    "bajo",
+    "medio",
+    "alto"
+  ],
+  "categorias": [
+    {
+      "id": "costo",
+      "nombre": "Costo",
+      "color": "#4ca239",
+      "significado": "Un nivel alto significa mayor gasto observado para permanecer. No significa una condición más favorable.",
+      "icono": "dinerito",
+      "comparable": true,
+      "admite_nivel": true,
+      "nombre_color": "Verde",
+      "etiqueta_corta": "Costo"
+    },
+    {
+      "id": "seguridad",
+      "nombre": "Seguridad percibida",
+      "color": "#f14e4c",
+      "significado": "Un nivel alto representa mayor sensación de seguridad durante un recorrido concreto. No mide delitos ni riesgo objetivo.",
+      "icono": "cuidado",
+      "comparable": true,
+      "admite_nivel": true,
+      "nombre_color": "Rojo",
+      "etiqueta_corta": "Seguridad"
+    },
+    {
+      "id": "permanencia",
+      "nombre": "Permanencia",
+      "color": "#8e55f5",
+      "significado": "Un nivel alto representa mayor facilidad observada para permanecer, considerando descanso y consumo obligatorio.",
+      "icono": "area_verde",
+      "comparable": true,
+      "admite_nivel": true,
+      "nombre_color": "Morado",
+      "etiqueta_corta": "Permanencia"
+    },
+    {
+      "id": "transporte",
+      "nombre": "Transporte y movilidad",
+      "color": "#1f4fdf",
+      "significado": "Un nivel alto representa mayor conectividad observada. Se debe documentar el criterio y las opciones de transporte.",
+      "icono": "transporte",
+      "comparable": true,
+      "admite_nivel": true,
+      "nombre_color": "Azul",
+      "etiqueta_corta": "Transporte"
+    },
+    {
+      "id": "comodidad",
+      "nombre": "Comodidad",
+      "color": "#fcaa3f",
+      "significado": "Un nivel alto representa mejores condiciones observadas para caminar, descansar y utilizar el espacio.",
+      "icono": null,
+      "comparable": true,
+      "admite_nivel": true,
+      "nombre_color": "Naranja",
+      "etiqueta_corta": "Comodidad"
+    },
+    {
+      "id": "areas_verdes",
+      "nombre": "Espacios verdes",
+      "color": "#73b88a",
+      "icono": "area_verde",
+      "comparable": true,
+      "admite_nivel": true,
+      "significado": "Un nivel alto representa mayor disponibilidad observada de áreas verdes y espacios de descanso. El criterio y el recorrido deben quedar documentados."
+    },
+    {
+      "id": "sonido",
+      "nombre": "Registros auditivos",
+      "color": "#b198dc",
+      "icono": "sonido",
+      "comparable": false,
+      "admite_nivel": false,
+      "significado": "Grabaciones ambientales documentadas del territorio. No representan un nivel bajo, medio o alto. El icono permite escuchar cuando hay un archivo asociado."
+    },
+    {
+      "id": "servicios",
+      "nombre": "Acceso a servicios",
+      "color": "#8d9ca8",
+      "icono": null,
+      "comparable": false,
+      "admite_nivel": true,
+      "significado": "Disponibilidad observada de servicios durante el recorrido. Requiere documentar sus condiciones de acceso."
+    }
+  ],
+  "territorios": [
+    {
+      "id": "santa-maria",
+      "nombre": "Santa María la Ribera / Atlampa",
+      "color": "#f6df44",
+      "punto_mapa": {
+        "x": 37,
+        "y": 22
+      },
+      "escenas": [
+        "santa-maria"
+      ],
+      "descripcion": "Un recorrido por Santa María la Ribera / Atlampa. Acércate a su ilustración y consulta las observaciones disponibles.",
+      "imagen": "mapas_nvos/stamaria-laribera.png",
+      "variables": {
+        "costo": null,
+        "seguridad": null,
+        "permanencia": null,
+        "transporte": null,
+        "comodidad": null,
+        "areas_verdes": null,
+        "sonido": null,
+        "servicios": null
+      },
+      "puntos_interactivos": [],
+      "evidencia": [],
+      "fuente": null,
+      "audio": null,
+      "registros_observacion": []
+    },
+    {
+      "id": "tlatelolco",
+      "nombre": "Tlatelolco",
+      "color": "#4d99cf",
+      "punto_mapa": {
+        "x": 62,
+        "y": 25
+      },
+      "escenas": [
+        "tlatelolco"
+      ],
+      "descripcion": "Un recorrido por Tlatelolco. Acércate a su ilustración y consulta las observaciones disponibles.",
+      "imagen": "mapas_nvos/tlatelolco.png",
+      "variables": {
+        "costo": null,
+        "seguridad": null,
+        "permanencia": null,
+        "transporte": null,
+        "comodidad": null,
+        "areas_verdes": null,
+        "sonido": null,
+        "servicios": null
+      },
+      "puntos_interactivos": [],
+      "evidencia": [],
+      "fuente": null,
+      "audio": null,
+      "registros_observacion": []
+    },
+    {
+      "id": "morelos",
+      "nombre": "Morelos / Peralvillo",
+      "color": "#ef9a32",
+      "punto_mapa": {
+        "x": 83,
+        "y": 14
+      },
+      "escenas": [
+        "morelos"
+      ],
+      "descripcion": "Un recorrido por Morelos / Peralvillo. Acércate a su ilustración y consulta las observaciones disponibles.",
+      "imagen": "mapas_nvos/morelor-peralvillo.png",
+      "variables": {
+        "costo": null,
+        "seguridad": null,
+        "permanencia": null,
+        "transporte": null,
+        "comodidad": null,
+        "areas_verdes": null,
+        "sonido": null,
+        "servicios": null
+      },
+      "puntos_interactivos": [],
+      "evidencia": [],
+      "fuente": null,
+      "audio": null,
+      "registros_observacion": []
+    },
+    {
+      "id": "juarez",
+      "nombre": "Juárez / San Rafael",
+      "color": "#8278bd",
+      "punto_mapa": {
+        "x": 31,
+        "y": 49
+      },
+      "escenas": [
+        "juarez"
+      ],
+      "descripcion": "Un recorrido por Juárez / San Rafael. Acércate a su ilustración y consulta las observaciones disponibles.",
+      "imagen": "mapas_nvos/juarez-san-rafael.png",
+      "variables": {
+        "costo": null,
+        "seguridad": null,
+        "permanencia": null,
+        "transporte": null,
+        "comodidad": null,
+        "areas_verdes": null,
+        "sonido": null,
+        "servicios": null
+      },
+      "puntos_interactivos": [],
+      "evidencia": [],
+      "fuente": null,
+      "audio": null,
+      "registros_observacion": []
+    },
+    {
+      "id": "centro",
+      "nombre": "Centro",
+      "color": "#d953a0",
+      "punto_mapa": {
+        "x": 83,
+        "y": 50
+      },
+      "escenas": [
+        "centro"
+      ],
+      "descripcion": "Un recorrido por Centro. Acércate a su ilustración y consulta las observaciones disponibles.",
+      "imagen": "mapas_nvos/centro.png",
+      "variables": {
+        "costo": null,
+        "seguridad": null,
+        "permanencia": null,
+        "transporte": null,
+        "comodidad": null,
+        "areas_verdes": null,
+        "sonido": null,
+        "servicios": null
+      },
+      "puntos_interactivos": [],
+      "evidencia": [],
+      "fuente": null,
+      "audio": null,
+      "registros_observacion": []
+    },
+    {
+      "id": "esperanza",
+      "nombre": "Esperanza / Buenos Aires",
+      "color": "#d3df45",
+      "punto_mapa": {
+        "x": 85,
+        "y": 84
+      },
+      "escenas": [
+        "esperanza"
+      ],
+      "descripcion": "Un recorrido por Esperanza / Buenos Aires. Acércate a su ilustración y consulta las observaciones disponibles.",
+      "imagen": "mapas_nvos/esperanza-buenosaires.png",
+      "variables": {
+        "costo": null,
+        "seguridad": null,
+        "permanencia": null,
+        "transporte": null,
+        "comodidad": null,
+        "areas_verdes": null,
+        "sonido": null,
+        "servicios": null
+      },
+      "puntos_interactivos": [],
+      "evidencia": [],
+      "fuente": null,
+      "audio": null,
+      "registros_observacion": []
+    },
+    {
+      "id": "obrera",
+      "nombre": "Obrera / Doctores",
+      "color": "#eb76ab",
+      "punto_mapa": {
+        "x": 64,
+        "y": 80
+      },
+      "escenas": [
+        "doctores"
+      ],
+      "descripcion": "Un recorrido por Obrera / Doctores. Acércate a su ilustración y consulta las observaciones disponibles.",
+      "imagen": "mapas_nvos/obrera-doctores.png",
+      "variables": {
+        "costo": null,
+        "seguridad": null,
+        "permanencia": null,
+        "transporte": null,
+        "comodidad": null,
+        "areas_verdes": null,
+        "sonido": null,
+        "servicios": null
+      },
+      "puntos_interactivos": [],
+      "evidencia": [],
+      "fuente": null,
+      "audio": null,
+      "registros_observacion": []
+    },
+    {
+      "id": "roma",
+      "nombre": "Roma / Condesa",
+      "color": "#79bea6",
+      "punto_mapa": {
+        "x": 25,
+        "y": 81
+      },
+      "escenas": [
+        "roma"
+      ],
+      "descripcion": "Un recorrido por Roma / Condesa. Acércate a su ilustración y consulta las observaciones disponibles.",
+      "imagen": "mapas_nvos/roma-condesa.png",
+      "variables": {
+        "costo": null,
+        "seguridad": null,
+        "permanencia": null,
+        "transporte": null,
+        "comodidad": null,
+        "areas_verdes": null,
+        "sonido": null,
+        "servicios": null
+      },
+      "puntos_interactivos": [
+        "roma-parque-mexico"
+      ],
+      "evidencia": [],
+      "fuente": "Texto del proyecto · Observación 06: espacios abiertos y cerrados.",
+      "audio": null,
+      "registros_observacion": [
+        "roma-parque-mexico"
+      ]
+    }
+  ],
+  "escenas": [
+    {
+      "id": "santa-maria",
+      "nombre": "Santa María la Ribera / Atlampa",
+      "territorio": "santa-maria",
+      "imagen": "mapas_nvos/stamaria-laribera.png",
+      "original": "mapas_nvos/stamaria-laribera.png",
+      "ancho": 1254,
+      "alto": 1254,
+      "alt": "Mapa ilustrado original de Santa María la Ribera / Atlampa, con sus calles, edificios y anotaciones dibujadas a mano.",
+      "nota": "PNG original, sin recortes, filtros, bordes añadidos ni cambios de composición.",
+      "miniatura": "assets/miniaturas/santa-maria.webp"
+    },
+    {
+      "id": "tlatelolco",
+      "nombre": "Tlatelolco",
+      "territorio": "tlatelolco",
+      "imagen": "mapas_nvos/tlatelolco.png",
+      "original": "mapas_nvos/tlatelolco.png",
+      "ancho": 1254,
+      "alto": 1254,
+      "alt": "Mapa ilustrado original de Tlatelolco, con sus calles, edificios y anotaciones dibujadas a mano.",
+      "nota": "PNG original, sin recortes, filtros, bordes añadidos ni cambios de composición.",
+      "miniatura": "assets/miniaturas/tlatelolco.webp"
+    },
+    {
+      "id": "morelos",
+      "nombre": "Morelos / Peralvillo",
+      "territorio": "morelos",
+      "imagen": "mapas_nvos/morelor-peralvillo.png",
+      "original": "mapas_nvos/morelor-peralvillo.png",
+      "ancho": 1254,
+      "alto": 1254,
+      "alt": "Mapa ilustrado original de Morelos / Peralvillo, con sus calles, edificios y anotaciones dibujadas a mano.",
+      "nota": "PNG original, sin recortes, filtros, bordes añadidos ni cambios de composición.",
+      "miniatura": "assets/miniaturas/morelos.webp"
+    },
+    {
+      "id": "juarez",
+      "nombre": "Juárez / San Rafael",
+      "territorio": "juarez",
+      "imagen": "mapas_nvos/juarez-san-rafael.png",
+      "original": "mapas_nvos/juarez-san-rafael.png",
+      "ancho": 1254,
+      "alto": 1254,
+      "alt": "Mapa ilustrado original de Juárez / San Rafael, con sus calles, edificios y anotaciones dibujadas a mano.",
+      "nota": "PNG original, sin recortes, filtros, bordes añadidos ni cambios de composición.",
+      "miniatura": "assets/miniaturas/juarez.webp"
+    },
+    {
+      "id": "centro",
+      "nombre": "Centro",
+      "territorio": "centro",
+      "imagen": "mapas_nvos/centro.png",
+      "original": "mapas_nvos/centro.png",
+      "ancho": 1254,
+      "alto": 1254,
+      "alt": "Mapa ilustrado original de Centro, con sus calles, edificios y anotaciones dibujadas a mano.",
+      "nota": "PNG original, sin recortes, filtros, bordes añadidos ni cambios de composición.",
+      "miniatura": "assets/miniaturas/centro.webp"
+    },
+    {
+      "id": "esperanza",
+      "nombre": "Esperanza / Buenos Aires",
+      "territorio": "esperanza",
+      "imagen": "mapas_nvos/esperanza-buenosaires.png",
+      "original": "mapas_nvos/esperanza-buenosaires.png",
+      "ancho": 1254,
+      "alto": 1254,
+      "alt": "Mapa ilustrado original de Esperanza / Buenos Aires, con sus calles, edificios y anotaciones dibujadas a mano.",
+      "nota": "PNG original, sin recortes, filtros, bordes añadidos ni cambios de composición.",
+      "miniatura": "assets/miniaturas/esperanza.webp"
+    },
+    {
+      "id": "doctores",
+      "nombre": "Obrera / Doctores",
+      "territorio": "obrera",
+      "imagen": "mapas_nvos/obrera-doctores.png",
+      "original": "mapas_nvos/obrera-doctores.png",
+      "ancho": 1254,
+      "alto": 1254,
+      "alt": "Mapa ilustrado original de Obrera / Doctores, con sus calles, edificios y anotaciones dibujadas a mano.",
+      "nota": "PNG original, sin recortes, filtros, bordes añadidos ni cambios de composición.",
+      "miniatura": "assets/miniaturas/doctores.webp"
+    },
+    {
+      "id": "roma",
+      "nombre": "Roma / Condesa",
+      "territorio": "roma",
+      "imagen": "mapas_nvos/roma-condesa.png",
+      "original": "mapas_nvos/roma-condesa.png",
+      "ancho": 1254,
+      "alto": 1254,
+      "alt": "Mapa ilustrado original de Roma / Condesa, con sus calles, edificios y anotaciones dibujadas a mano.",
+      "nota": "PNG original, sin recortes, filtros, bordes añadidos ni cambios de composición.",
+      "miniatura": "assets/miniaturas/roma.webp"
+    }
+  ],
+  "registros": [
+    {
+      "id": "roma-parque-mexico",
+      "territorio": "roma",
+      "escena": "roma",
+      "categoria": "permanencia",
+      "valor": null,
+      "unidad": null,
+      "nivel": null,
+      "observacion": "Durante nuestros recorridos identificamos en Parque México oportunidades para permanecer en áreas abiertas sin necesidad de consumir.",
+      "tipo_fuente": "observacion_propia",
+      "referencia": "Texto del proyecto · Observación 06: espacios abiertos y cerrados.",
+      "evidencia": null,
+      "fecha": null,
+      "confirmado": true,
+      "audio": null,
+      "posicion": {
+        "x": 34,
+        "y": 26,
+        "precision": "ubicacion_documentada",
+        "imagen": "mapas_nvos/roma-condesa.png",
+        "nota": "Posición sobre la etiqueta reconocible de Parque México en la ilustración; no es una coordenada geográfica."
+      },
+      "recurso_svg": "area_verde",
+      "lugar": "Parque México",
+      "interpretacion": "La presencia de espacios abiertos puede ampliar las posibilidades de permanecer sin gasto. Esta lectura corresponde a nuestra experiencia; no es una valoración general del territorio."
+    }
+  ],
+  "esquema_registro": {
+    "id": "Identificador único",
+    "territorio": "ID de agrupación territorial",
+    "escena": "ID de escena",
+    "categoria": "ID de categoría",
+    "valor": null,
+    "unidad": null,
+    "nivel": null,
+    "observacion": null,
+    "tipo_fuente": null,
+    "referencia": null,
+    "evidencia": null,
+    "fecha": null,
+    "confirmado": false,
+    "audio": null,
+    "posicion": null,
+    "recurso_svg": null
+  },
+  "guia": {
+    "registros": "Añadir objetos a registros. Solo se muestran los confirmados con tipo_fuente, referencia o evidencia, y una observación. Si existe más de un registro de una categoría en una escena, el panel muestra el más reciente por fecha y avisa que hay más. No se promedian observaciones.",
+    "posicion": "Opcional: {x: 0–100, y: 0–100, precision: \"ubicacion_documentada\", imagen: \"fotos_nuevas/NOMBRE_EXACTO.png\"}. Coordenadas sobre el PNG completo. El nombre de imagen debe coincidir con la escena actual para no reutilizar posiciones de las ilustraciones anteriores. Sin posición documentada, el registro sigue visible en el panel.",
+    "audio": "Ruta relativa a un audio real asociado al registro. Nunca se reproduce automáticamente.",
+    "comparacion": "Los círculos solo expresan niveles confirmados y no equivalen a un índice estadístico. Revisar que los criterios y fechas permitan la comparación.",
+    "recursos_svg": "La categoría define un icono de recursos_svg. Un registro puede especificar recurso_svg; sonido se usa para grabaciones reales. Solo los archivos de audio confirmados activan botones de reproducción.",
+    "archivo_anterior": "Se conserva escenas_anteriores como referencia de los siete recursos iniciales. Los registros originales no se eliminan ni se convierten a nuevas coordenadas automáticamente."
+  },
+  "escenas_anteriores": [
+    {
+      "id": "centro",
+      "nombre": "Centro",
+      "territorio": "centro",
+      "imagen": "assets/escenas/01_Centro.webp",
+      "original": "01_Centro.png",
+      "alt": "Ilustración isométrica de Centro. Conserva anotaciones originales de la referencia, sin verificar.",
+      "nota": "Recorte rectangular de la composición original. Sin modificación de colores, edificios ni elementos de la ilustración."
+    },
+    {
+      "id": "tabacalera",
+      "nombre": "Tabacalera",
+      "territorio": "juarez",
+      "imagen": "assets/escenas/02_Tabacalera.webp",
+      "original": "02_Tabacalera.png",
+      "alt": "Ilustración isométrica de Tabacalera. Conserva anotaciones originales de la referencia, sin verificar.",
+      "nota": "Recorte rectangular de la composición original. Sin modificación de colores, edificios ni elementos de la ilustración."
+    },
+    {
+      "id": "tlatelolco",
+      "nombre": "Tlatelolco",
+      "territorio": "tlatelolco",
+      "imagen": "assets/escenas/03_Tlatelolco.webp",
+      "original": "03_Tlatelolco.png",
+      "alt": "Ilustración isométrica de Tlatelolco. Conserva anotaciones originales de la referencia, sin verificar.",
+      "nota": "Recorte rectangular de la composición original. Sin modificación de colores, edificios ni elementos de la ilustración."
+    },
+    {
+      "id": "santa-maria",
+      "nombre": "Santa María la Ribera",
+      "territorio": "santa-maria",
+      "imagen": "assets/escenas/04_Santa_Maria_la_Ribera.webp",
+      "original": "04_Santa_Maria_la_Ribera.png",
+      "alt": "Ilustración isométrica de Santa María la Ribera. Conserva anotaciones originales de la referencia, sin verificar.",
+      "nota": "Recorte rectangular de la composición original. Sin modificación de colores, edificios ni elementos de la ilustración."
+    },
+    {
+      "id": "cuauhtemoc",
+      "nombre": "Cuauhtémoc",
+      "territorio": "juarez",
+      "imagen": "assets/escenas/05_Cuauhtemoc.webp",
+      "original": "05_Cuauhtemoc.png",
+      "alt": "Ilustración isométrica de Cuauhtémoc. Conserva anotaciones originales de la referencia, sin verificar.",
+      "nota": "Recorte rectangular de la composición original. Sin modificación de colores, edificios ni elementos de la ilustración."
+    },
+    {
+      "id": "roma",
+      "nombre": "Roma / Condesa",
+      "territorio": "roma",
+      "imagen": "assets/escenas/06_Roma_Condesa.webp",
+      "original": "06_Roma_Condesa.png",
+      "alt": "Ilustración isométrica de Roma / Condesa. Conserva anotaciones originales de la referencia, sin verificar.",
+      "nota": "Recorte rectangular de la composición original. Sin modificación de colores, edificios ni elementos de la ilustración."
+    },
+    {
+      "id": "doctores",
+      "nombre": "Doctores / Obrera",
+      "territorio": "obrera",
+      "imagen": "assets/escenas/07_Doctores_Obrera.webp",
+      "original": "07_Doctores_Obrera.png",
+      "alt": "Ilustración isométrica de Doctores / Obrera. Conserva anotaciones originales de la referencia, sin verificar.",
+      "nota": "Recorte rectangular de la composición original. Sin modificación de colores, edificios ni elementos de la ilustración."
+    }
+  ],
+  "recursos_svg": {
+    "area_verde": "iconos/área-verde.svg",
+    "cuidado": "iconos/cuidado.svg",
+    "dinerito": "iconos/dinerito.svg",
+    "sonido": "iconos/sonido.svg",
+    "transporte": "iconos/transporte.svg"
+  },
+  "proyecto": {
+    "titulo": "Entre estar y PODER estar",
+    "subtitulo": "Una visualización de Small Data sobre las condiciones de habitabilidad en la alcaldía Cuauhtémoc.",
+    "introduccion": "Recorrimos distintos territorios de Cuauhtémoc para observar qué condiciones influyen en nuestra posibilidad de llegar, utilizar y permanecer en sus espacios.",
+    "mapa_general": "assets/mapa-territorial.webp",
+    "fuente": "Texto del proyecto proporcionado por el equipo de investigación.",
+    "alcance": "Experiencias situadas de nuestros recorridos. No representan a toda la población ni constituyen una clasificación de territorios.",
+    "mapa_general_con_indicadores": false
+  },
+  "hallazgos_transversales": [
+    {
+      "id": "llegar",
+      "numero": "01",
+      "titulo": "El recorrido empieza antes de llegar",
+      "observacion": "Revisamos rutas, transbordos, tiempos de llegada y opciones de movilidad. La posibilidad de llegar influye desde el inicio en nuestra experiencia del lugar.",
+      "icono": "transporte",
+      "interpretacion": "Preparar el viaje también forma parte de poder estar.",
+      "fuente": "Texto del proyecto · Observación 01",
+      "tipo_fuente": "observacion_propia",
+      "alcance": "transversal",
+      "fecha": null
+    },
+    {
+      "id": "seguridad",
+      "numero": "02",
+      "titulo": "La afluencia no lo dice todo",
+      "observacion": "Prestamos atención a las personas, la actividad del entorno y nuestra sensación de seguridad. Un lugar con mucha afluencia no necesariamente se percibe como seguro.",
+      "icono": "cuidado",
+      "interpretacion": "La percepción cambia con el día, el horario y las circunstancias.",
+      "fuente": "Texto del proyecto · Observación 02",
+      "tipo_fuente": "observacion_propia",
+      "alcance": "transversal",
+      "fecha": null
+    },
+    {
+      "id": "consumo",
+      "numero": "03",
+      "titulo": "Permanecer también puede costar",
+      "observacion": "Encontramos espacios donde podemos permanecer sin consumir. Acceder a ciertos sanitarios, lugares de descanso o establecimientos cerrados puede implicar un gasto.",
+      "icono": "dinerito",
+      "interpretacion": "La posibilidad de quedarse puede depender de los recursos disponibles.",
+      "fuente": "Texto del proyecto · Observación 03",
+      "tipo_fuente": "observacion_propia",
+      "alcance": "transversal",
+      "fecha": null
+    },
+    {
+      "id": "zonas",
+      "numero": "04",
+      "titulo": "Ocho territorios, distintas experiencias",
+      "observacion": "Observamos diferencias entre zonas con actividad comercial, espacios culturales, áreas habitacionales y puntos de movilidad cotidiana.",
+      "icono": "area_verde",
+      "interpretacion": "Las actividades del entorno influyen en las posibilidades de permanencia.",
+      "fuente": "Texto del proyecto · Observación 04",
+      "tipo_fuente": "observacion_propia",
+      "alcance": "transversal",
+      "fecha": null
+    },
+    {
+      "id": "recursos",
+      "numero": "05",
+      "titulo": "Lo que llevamos también cuenta",
+      "observacion": "Agua, dinero, celular, cargador y acceso al transporte formaron parte de la preparación. Llevar agua desde casa puede reducir la necesidad de comprarla.",
+      "icono": "dinerito",
+      "interpretacion": "La experiencia del lugar también depende de nuestros recursos personales.",
+      "fuente": "Texto del proyecto · Observación 05",
+      "tipo_fuente": "observacion_propia",
+      "alcance": "transversal",
+      "fecha": null
+    },
+    {
+      "id": "espacios",
+      "numero": "06",
+      "titulo": "Un techo, una banca, una pausa",
+      "observacion": "En nuestra experiencia, algunos espacios cerrados pueden ofrecer resguardo de la lluvia, descanso o servicios. Sus condiciones de acceso y uso difieren de las de los espacios públicos.",
+      "icono": "area_verde",
+      "interpretacion": "El acceso a un espacio no implica las mismas posibilidades de uso. Los ejemplos fuera de Cuauhtémoc no se ubican en este atlas.",
+      "fuente": "Texto del proyecto · Observación 06",
+      "tipo_fuente": "observacion_propia",
+      "alcance": "transversal",
+      "fecha": null
+    },
+    {
+      "id": "tiempo",
+      "numero": "07",
+      "titulo": "El lugar también cambia",
+      "observacion": "El horario, el día, la afluencia, las actividades, los servicios y los recursos personales cambian las condiciones de cada recorrido.",
+      "icono": "cuidado",
+      "interpretacion": "La experiencia urbana depende de un contexto; no es una condición fija.",
+      "fuente": "Texto del proyecto · Observación 07",
+      "tipo_fuente": "observacion_propia",
+      "alcance": "transversal",
+      "fecha": null
+    }
+  ],
+  "archivo": {
+    "nota": "Recursos proporcionados por el equipo. No cuentan con una asociación territorial, fecha de recorrido ni descripción de campo verificadas. Los títulos de audio proceden únicamente de los nombres de archivo.",
+    "fotografias": [
+      {
+        "id": "PHOTO-2026-04-15-15-06-39",
+        "original": "assets/fotografias-completas/PHOTO-2026-04-15-15-06-39.jpg",
+        "imagen": "assets/fotografias/PHOTO-2026-04-15-15-06-39.webp",
+        "alt": "Fotografía del archivo de recorridos del equipo; ubicación sin asociar.",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo fotográfico proporcionado por el equipo.",
+        "archivo_origen": "fotos_smalldata/PHOTO-2026-04-15-15-06-39.jpg"
+      },
+      {
+        "id": "IMG_3741",
+        "original": "assets/fotografias-completas/IMG_3741.jpeg",
+        "imagen": "assets/fotografias/IMG_3741.webp",
+        "alt": "Fotografía del archivo de recorridos del equipo; ubicación sin asociar.",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo fotográfico proporcionado por el equipo.",
+        "archivo_origen": "fotos_smalldata/IMG_3741.jpeg"
+      },
+      {
+        "id": "IMG_3294",
+        "original": "assets/fotografias-completas/IMG_3294.jpeg",
+        "imagen": "assets/fotografias/IMG_3294.webp",
+        "alt": "Fotografía del archivo de recorridos del equipo; ubicación sin asociar.",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo fotográfico proporcionado por el equipo.",
+        "archivo_origen": "fotos_smalldata/IMG_3294.jpeg"
+      },
+      {
+        "id": "IMG_7823",
+        "original": "assets/fotografias-completas/IMG_7823.jpeg",
+        "imagen": "assets/fotografias/IMG_7823.webp",
+        "alt": "Fotografía del archivo de recorridos del equipo; ubicación sin asociar.",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo fotográfico proporcionado por el equipo.",
+        "archivo_origen": "fotos_smalldata/IMG_7823.jpeg"
+      },
+      {
+        "id": "IMG_2569",
+        "original": "assets/fotografias-completas/IMG_2569.jpeg",
+        "imagen": "assets/fotografias/IMG_2569.webp",
+        "alt": "Fotografía del archivo de recorridos del equipo; ubicación sin asociar.",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo fotográfico proporcionado por el equipo.",
+        "archivo_origen": "fotos_smalldata/IMG_2569.jpeg"
+      },
+      {
+        "id": "IMG_0945",
+        "original": "assets/fotografias-completas/IMG_0945.jpeg",
+        "imagen": "assets/fotografias/IMG_0945.webp",
+        "alt": "Fotografía del archivo de recorridos del equipo; ubicación sin asociar.",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo fotográfico proporcionado por el equipo.",
+        "archivo_origen": "fotos_smalldata/IMG_0945.jpeg"
+      }
+    ],
+    "audios": [
+      {
+        "id": "Fierro-viejo",
+        "titulo": "Fierro viejo",
+        "ruta": "SONIDOS_SMALLDATA/Fierro-viejo.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 34.743,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "RioLerma",
+        "titulo": "Río lerma",
+        "ruta": "SONIDOS_SMALLDATA/RioLerma.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 106.475,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "metrobus",
+        "titulo": "Metrobus",
+        "ruta": "SONIDOS_SMALLDATA/metrobus.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 150.909,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "mundial-mexico",
+        "titulo": "Mundial mexico",
+        "ruta": "SONIDOS_SMALLDATA/mundial-mexico.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 94.9,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "musica-calle",
+        "titulo": "Musica calle",
+        "ruta": "SONIDOS_SMALLDATA/musica-calle.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 246.909,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "pan-bici",
+        "titulo": "Pan bici",
+        "ruta": "SONIDOS_SMALLDATA/pan-bici.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 62.511,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "paseo-parque",
+        "titulo": "Paseo parque",
+        "ruta": "SONIDOS_SMALLDATA/paseo-parque.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 176.832,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "vendedor-paca",
+        "titulo": "Vendedor paca",
+        "ruta": "SONIDOS_SMALLDATA/vendedor-paca.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 62.224,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "venta-mercado",
+        "titulo": "Venta mercado",
+        "ruta": "SONIDOS_SMALLDATA/venta-mercado.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 59.027,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      },
+      {
+        "id": "venta-metro",
+        "titulo": "Venta metro",
+        "ruta": "SONIDOS_SMALLDATA/venta-metro.mp3",
+        "territorio": null,
+        "fecha": null,
+        "fuente": "Archivo sonoro proporcionado por el equipo. Título del archivo; ubicación sin asociar.",
+        "alcance": "general",
+        "lugar_registrado": null,
+        "descripcion": null,
+        "posicion": null,
+        "alcance_fuente": "Archivo general del proyecto. La procedencia territorial no está documentada; no se asigna a ninguno de los ocho mapas.",
+        "duracion": 96.47,
+        "duracion_fuente": "Duración técnica estimada del archivo de audio.",
+        "procedencia_territorial": null
+      }
+    ]
+  },
+  "identidad_small_data": {
+    "orden": [
+      "costo",
+      "transporte",
+      "comodidad",
+      "seguridad",
+      "permanencia"
+    ],
+    "correspondencia_indicada_por_equipo": true,
+    "fuente_tonos": "referencia.png: círculos de la ilustración suministrada. Las fotografías nuevas de la bitácora no estaban adjuntas al mensaje accesible.",
+    "muestras_referencia": {
+      "costo": {
+        "x": 588,
+        "y": 66
+      },
+      "transporte": {
+        "x": 659,
+        "y": 55
+      },
+      "comodidad": {
+        "x": 648,
+        "y": 120
+      },
+      "seguridad": {
+        "x": 608,
+        "y": 190
+      },
+      "permanencia": {
+        "x": 571,
+        "y": 112
+      }
+    },
+    "nota": "El color identifica la variable, no el territorio. El tamaño identifica un nivel registrado. Los iconos representan el tipo de observación."
+  }
+}

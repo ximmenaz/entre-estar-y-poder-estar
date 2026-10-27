@@ -1,23 +1,15 @@
-# macOS
 .DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-# Thumbnails / indexing
-.Spotlight-V100
-.Trashes
-.fseventsd
-
-# Editors
-.vscode/
-.idea/
-*.swp
-
-# Logs
-*.log
-npm-debug.log*
-
-# Environment
+.preview/
+__pycache__/
+*.py[cod]
 .env
 .env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.codex/
+.agents/
+# Raw originals remain local; the working full-resolution copies have no GPS.
+fotos_smalldata/

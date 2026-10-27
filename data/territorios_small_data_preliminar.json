@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "estado_archivo": "plantilla_sin_valoraciones",
+  "nota": "El archivo de valoraciones mencionado en la actualización no se encontró en las carpetas revisadas. Esta estructura contiene únicamente estados sin_dato; no reproduce ni sustituye valoraciones del equipo.",
+  "fuente": null,
+  "escala": {
+    "1": "Bajo",
+    "2": "Medio",
+    "3": "Alto"
+  },
+  "recursos_svg_niveles": {
+    "1": "iconos/pequeña.svg",
+    "2": "iconos/mediana.svg",
+    "3": "iconos/grande.svg"
+  },
+  "territorios": [
+    {
+      "id": "santa-maria",
+      "nombre": "Santa María la Ribera / Atlampa",
+      "variables": {
+        "costo": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "transporte": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración de conectividad del equipo y su procedencia."
+          ]
+        },
+        "comodidad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "seguridad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "permanencia": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        }
+      },
+      "contexto": []
+    },
+    {
+      "id": "tlatelolco",
+      "nombre": "Tlatelolco",
+      "variables": {
+        "costo": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "transporte": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración de conectividad del equipo y su procedencia."
+          ]
+        },
+        "comodidad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "seguridad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "permanencia": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        }
+      },
+      "contexto": []
+    },
+    {
+      "id": "morelos",
+      "nombre": "Morelos / Peralvillo",
+      "variables": {
+        "costo": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "transporte": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración de conectividad del equipo y su procedencia."
+          ]
+        },
+        "comodidad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "seguridad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "permanencia": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        }
+      },
+      "contexto": []
+    },
+    {
+      "id": "juarez",
+      "nombre": "Juárez / San Rafael",
+      "variables": {
+        "costo": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "transporte": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración de conectividad del equipo y su procedencia."
+          ]
+        },
+        "comodidad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "seguridad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "permanencia": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        }
+      },
+      "contexto": []
+    },
+    {
+      "id": "centro",
+      "nombre": "Centro",
+      "variables": {
+        "costo": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "transporte": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración de conectividad del equipo y su procedencia."
+          ]
+        },
+        "comodidad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "seguridad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "permanencia": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        }
+      },
+      "contexto": []
+    },
+    {
+      "id": "esperanza",
+      "nombre": "Esperanza / Buenos Aires",
+      "variables": {
+        "costo": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "transporte": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración de conectividad del equipo y su procedencia."
+          ]
+        },
+        "comodidad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "seguridad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "permanencia": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        }
+      },
+      "contexto": []
+    },
+    {
+      "id": "obrera",
+      "nombre": "Obrera / Doctores",
+      "variables": {
+        "costo": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "transporte": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración de conectividad del equipo y su procedencia."
+          ]
+        },
+        "comodidad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "seguridad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "permanencia": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        }
+      },
+      "contexto": []
+    },
+    {
+      "id": "roma",
+      "nombre": "Roma / Condesa",
+      "variables": {
+        "costo": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "transporte": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración de conectividad del equipo y su procedencia."
+          ]
+        },
+        "comodidad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "seguridad": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        },
+        "permanencia": {
+          "nivel": null,
+          "estado": "sin_dato",
+          "observacion": null,
+          "origen": null,
+          "referencias_secundarias": [],
+          "informacion_pendiente": [
+            "Incorporar la valoración original del equipo y su procedencia."
+          ]
+        }
+      },
+      "contexto": []
+    }
+  ]
+}

@@ -1,33 +1,194 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf6eb">
-  <meta name="description" content="Entre estar y PODER estar. Explora los sonidos de la alcaldía Cuauhtémoc y construye tu propio recorrido.">
-  <title>Entre estar y PODER estar — Cuauhtémoc</title>
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Entre estar y PODER estar. Un atlas ilustrado de Small Data sobre las condiciones de habitabilidad en Cuauhtémoc, Ciudad de México.">
+  <title>Entre estar y PODER estar · Cuauhtémoc</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=cartography-2">
-  <script src="script.js?v=cartography-2" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="script.js"></script>
 </head>
 <body>
-  <svg class="territory" viewBox="0 0 940 1670" preserveAspectRatio="none" aria-hidden="true"><defs id="route-masks"></defs><g id="routes"></g></svg>
+  <a class="skip-link" href="#explorar">Saltar a los territorios</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#inicio" aria-label="Entre estar y PODER estar, inicio">Entre estar<br>y <strong>PODER</strong> estar</a>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio" aria-current="location">Inicio</a>
+      <a href="#investigacion">La investigación</a>
+      <a href="#explorar">Explora</a>
+      <a href="#reflexion">Reflexión</a>
+    </nav>
+    <a class="button header-cta" href="#explorar">Explorar territorios <span aria-hidden="true">↓</span></a>
+  </header>
   <main>
-    <header>
-      <h1><span class="intro">Entre estar y</span><span class="power">PODER</span><span class="ending">estar</span></h1>
-      <h2>Los sonidos de Cuauhtémoc</h2>
-    </header>
-    <section class="experience" aria-label="Escuchar el territorio">
-      <p id="instructions" role="status" aria-live="polite" aria-atomic="true">Mantén presionado para escuchar un sonido de la alcaldía Cuauhtémoc.</p>
-      <button class="sound-button" type="button" aria-label="Escuchar un sonido. Mantén presionado hasta que se complete el círculo para escuchar un fragmento de la ciudad." aria-describedby="instructions keyboard-help">
-        <svg class="progress-ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="progress-guide" cx="60" cy="60" r="57"/><circle class="progress-trace" cx="60" cy="60" r="57" pathLength="100" transform="rotate(-90 60 60)"/></svg>
-        <svg class="speaker" viewBox="0 0 96 96" fill="none" aria-hidden="true"><path d="M46 16 25 37H12v24h13l21 20V16Z"/><path d="M61 36c7 7 7 17 0 24M72 23c15 14 15 37 0 51"/></svg>
-      </button>
-      <p id="keyboard-help" class="sr-only">Con teclado, usa espacio o Enter. Mantén la tecla hasta que se cierre el círculo. Soltar antes cancela la escucha.</p>
-      <p id="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-dot"></span> SMALL DATA · CUAUHTÉMOC, CDMX</p>
+        <h1 id="hero-title"><span>Entre estar</span><span>y <strong>PODER</strong> estar</span></h1>
+        <p class="hero-subtitle">Una visualización de Small Data sobre las condiciones de habitabilidad en la alcaldía Cuauhtémoc.</p>
+        <p class="hero-description" id="project-intro">Recorrimos distintos territorios de Cuauhtémoc para observar qué condiciones influyen en nuestra posibilidad de llegar, utilizar y permanecer en sus espacios.</p>
+        <p class="hero-premise">Porque estar en un lugar no siempre<br>significa poder habitarlo.</p>
+        <a class="button" href="#explorar">Explorar territorios <span aria-hidden="true">↓</span></a>
+        <svg class="hero-scribble" viewBox="0 0 100 70" aria-hidden="true"><path d="M60 3C10 21 0 59 38 38S79 8 55 44 38 78 84 47"/></svg>
+      </div>
+      <figure class="hero-art">
+        <div class="hero-map-stage">
+          <div class="hero-map-frame"><img class="hero-map" src="assets/mapa-territorial.webp" width="299" height="300" alt="Mapa general de Cuauhtémoc con ocho divisiones territoriales y sus colores originales." fetchpriority="high"><div id="hero-data-points" class="hero-data-points" aria-label="Niveles de Small Data con ubicación documentada"></div></div>
+          <a class="map-category map-category-green" href="#simbolos" aria-label="Conocer el símbolo de áreas verdes"><img src="iconos/área-verde.svg" width="66" height="66" alt=""></a>
+          <a class="map-category map-category-money" href="#simbolos" aria-label="Conocer el símbolo de consumo"><img src="iconos/dinerito.svg" width="66" height="66" alt=""></a>
+          <a class="map-category map-category-care" href="#simbolos" aria-label="Conocer el símbolo de precaución"><img src="iconos/cuidado.svg" width="66" height="66" alt=""></a>
+          <a class="map-category map-category-bus" href="#simbolos" aria-label="Conocer el símbolo de acceso al transporte"><img src="iconos/transporte.svg" width="66" height="66" alt=""></a>
+          <span class="hero-note handwritten">Ocho territorios,<br>distintas formas de estar.
+            <svg viewBox="0 0 100 65" aria-hidden="true"><path d="M8 10Q50 60 89 32m-19-4 19 4-7 17"/></svg>
+          </span>
+          <span class="hero-side-note handwritten">Cada recorrido<br>cuenta una historia.
+            <svg viewBox="0 0 70 85" aria-hidden="true"><path d="M59 7Q63 58 9 70m4-13L9 70l15 5"/></svg>
+          </span>
+          <div class="compass" aria-hidden="true"><span>N</span><svg viewBox="0 0 60 60"><path d="M30 3v54M3 30h54"/><circle cx="30" cy="30" r="9"/></svg></div>
+        </div>
+        <p class="hero-variable-kicker">COLORES DE NUESTRAS VARIABLES</p><div id="hero-variable-legend" class="hero-variable-legend" aria-label="Código cromático de las cinco variables"></div><div id="hero-observation-notes"></div><figcaption>UN ATLAS EDITORIAL DE EXPERIENCIAS URBANAS</figcaption>
+      </figure>
+      <div class="hero-bottom"><span>OBSERVAR · RECORRER · HABITAR</span><a href="#investigacion">La experiencia también es un dato <span aria-hidden="true">↓</span></a><span>01 — CONTEXTUALIZAR</span></div>
+    </section>
+
+    <section class="research-band" id="investigacion" aria-labelledby="research-title">
+      <div class="research-grid wrap">
+        <div class="research-copy reveal">
+          <p class="eyebrow">LA INVESTIGACIÓN</p>
+          <h2 id="research-title">Lo que los mapas<br>no cuentan.</h2>
+          <p>Los mapas tradicionales muestran ubicaciones, rutas y servicios, pero no siempre reflejan las condiciones necesarias para permanecer en un lugar.</p>
+          <p>A través de recorridos y observaciones en la alcaldía Cuauhtémoc reunimos registros sobre nuestra experiencia cotidiana para comprender qué influye en la posibilidad de habitar cada territorio.</p>
+          <p class="research-quote handwritten">La experiencia<br>también es un dato.</p>
+          <p class="scope-note">Una mirada situada: nuestros registros no representan la experiencia de toda la población.</p>
+        </div>
+        <div class="research-key reveal" id="datos">
+          <h3>¿Qué analizamos?</h3>
+          <div id="concepts" class="concepts" aria-label="Cinco variables: verde costo, azul transporte, naranja comodidad, rojo seguridad y morado permanencia"></div>
+          <p class="legend-scope">Áreas del mapa: territorios. Círculos: variables.</p>
+          <div id="concept-description" class="concept-description" aria-live="polite">El color identifica la variable. El tamaño representa su nivel. Toca un color para conocer su significado.</div>
+          <div class="reading-guide">
+            <h3>¿Cómo se lee el mapa?</h3>
+            <div class="reading-bottom">
+              <div class="scale" aria-label="Guía de tamaños en azul: transporte bajo, medio y alto; no son valoraciones territoriales">
+                <div><span class="scale-original scale-small variable-circle" style="--level-shape:url('iconos/pequeña.svg');--category:var(--variable-transporte)" aria-hidden="true"></span><span>1 · Bajo</span></div>
+                <div><span class="scale-original scale-medium variable-circle" style="--level-shape:url('iconos/mediana.svg');--category:var(--variable-transporte)" aria-hidden="true"></span><span>2 · Medio</span></div>
+                <div><span class="scale-original scale-large variable-circle" style="--level-shape:url('iconos/grande.svg');--category:var(--variable-transporte)" aria-hidden="true"></span><span>3 · Alto</span></div>
+                <div class="neutral-key"><span class="missing-mark" aria-hidden="true">—</span><span>Sin valoración</span></div>
+              </div>
+              <p class="handwritten scale-note">El tamaño expresa el nivel<br>observado de cada variable.
+                <svg viewBox="0 0 80 40" aria-hidden="true"><path d="M72 6Q35 43 8 16m0 0 3 15M8 16l17-3"/></svg>
+              </p>
+            </div>
+            <div class="validation-key"><span>Observación del equipo</span><span>Valoración preliminar · pendiente de validación</span></div><p class="scale-caution"><strong>Más grande no siempre significa mejor.</strong> En costo significa mayor gasto; en permanencia, más posibilidades de quedarse. Los niveles son valoraciones cualitativas, no índices estadísticos oficiales. Las hipótesis se identifican como «Valoración preliminar»; los datos faltantes no reciben un círculo.</p>
+          </div>
+          <div class="symbol-guide" id="simbolos"><h4>Símbolos de nuestras observaciones</h4><div id="symbol-legend" class="symbol-legend"></div><p>El símbolo identifica el tipo de registro. El círculo expresa el nivel de una variable. Las rutas y condiciones puntuales se muestran donde existe un registro situado.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-section wrap" id="explorar" aria-labelledby="explore-title">
+      <div class="section-topline"><p class="eyebrow">02 — EXPLORAR</p><span>UNA ALCALDÍA · OCHO TERRITORIOS</span></div>
+      <div id="load-status" class="load-status" role="status">Abriendo el atlas…</div>
+      <div class="territory-overview" id="territory-overview" hidden>
+        <div class="territory-intro reveal">
+          <h2 id="explore-title">Explora los territorios<br>de Cuauhtémoc.</h2>
+          <p>Selecciona una zona para descubrir lo que observamos en sus calles, espacios y recorridos.</p>
+          <div id="territory-list" class="territory-list" role="group" aria-label="Seleccionar territorio"></div>
+          <label class="mobile-selector" for="territory-select">Tu siguiente recorrido<select id="territory-select"></select></label>
+          <p class="handwritten overview-note">Ocho territorios,<br>una misma ciudad.</p>
+        </div>
+        <figure class="overview-figure reveal">
+          <div class="map-wrap" id="map-wrap">
+            <img id="general-map" src="assets/mapa-territorial.webp" width="299" height="300" alt="Mapa territorial de Cuauhtémoc. Selecciona una zona de color o uno de los ocho puntos para explorarla.">
+            <div id="map-points"></div>
+          </div>
+          <div id="map-labels" aria-hidden="true"></div>
+          <figcaption class="handwritten">Haz clic en un territorio<br>para acercarte a su recorrido. <span aria-hidden="true">↙</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="territory-detail" id="recorrido" aria-label="Recorrido por el territorio seleccionado" hidden>
+      <div class="wrap detail-inner">
+        <div class="detail-topline"><span id="scene-kicker" class="eyebrow">MAPA TERRITORIAL ILUSTRADO</span><div class="scene-controls"><button type="button" id="previous-scene" aria-label="Territorio anterior">←</button><span id="scene-counter">02 / 08</span><button type="button" id="next-scene" aria-label="Territorio siguiente">→</button></div></div>
+        <p id="small-data-status" class="small-data-status" role="status" hidden></p>
+        <div class="detail-grid">
+          <div class="scene-column">
+            <div class="map-composition">
+            <div id="map-sound" class="map-sound-toolbar" hidden></div>
+            <div id="scene-visual" class="scene-visual" aria-busy="false">
+              <img id="scene-image" src="mapas_nvos/tlatelolco.png" width="1254" height="1254" alt="Mapa ilustrado de Tlatelolco" loading="lazy">
+              <div id="hotspots" class="hotspots"></div>
+              <svg id="annotation-connector" class="annotation-connector" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" hidden><line id="annotation-line" x1="0" y1="0" x2="0" y2="0"/></svg>
+              <div id="annotation" class="annotation" role="region" aria-label="Anotación de campo" hidden></div>
+              <div id="empty-scene" class="empty-scene" hidden><p>No se pudo cargar esta ilustración. Selecciona otro territorio o vuelve a intentarlo.</p></div>
+            </div>
+            </div>
+            <section id="map-records" class="map-records" aria-label="Registros generales del territorio">
+              <p class="eyebrow">REGISTROS DEL TERRITORIO</p>
+              <p class="map-records-note">Estas valoraciones describen el territorio; su posición en esta franja no señala un lugar del mapa.</p>
+              <div id="map-indicators" class="map-indicators"></div>
+              <p id="pending-levels" class="pending-levels" hidden></p>
+              <div id="context-records" class="context-records" aria-label="Registros contextuales disponibles" hidden></div>
+              <p class="motion-note">Los pulsos señalan registros disponibles para consultar.</p>
+            </section>
+            <p id="territory-sound-note" class="territory-sound-note" hidden>Sin grabación territorial asociada. <a href="#archivo">Escuchar el archivo general ↗</a></p>
+            <p class="scene-caption">Ilustración original del equipo. Solo las observaciones con ubicación documentada se colocan sobre un lugar del mapa.</p>
+          </div>
+          <aside class="data-panel" aria-labelledby="data-title">
+            <p class="eyebrow">CUADERNO DE RECORRIDO</p>
+            <h3 id="data-title">Tlatelolco</h3>
+            <p id="territory-description"></p>
+            <div class="indicator-heading"><h4>Condiciones observadas</h4><a href="#datos" aria-label="Consultar la guía de lectura">↗</a></div>
+            <div id="indicators" class="indicators"></div>
+            <p class="neutral-explanation">Un guion indica que no hay valoración. Las valoraciones preliminares se identifican con su etiqueta, conservando el color de la variable.</p>
+            <div class="field-note"><span id="data-status" class="eyebrow">OBSERVACIONES DISPONIBLES</span><div id="territory-observations"></div></div>
+          </aside>
+        </div>
+        <div class="detail-bottom"><a href="#explorar">↑ Volver a los ocho territorios</a><span class="handwritten">Mirar de cerca cambia la experiencia.</span><button type="button" id="next-bottom">Siguiente territorio <span aria-hidden="true">→</span></button></div>
+      </div>
+      <p id="selection-status" class="sr-only" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="comparison-section wrap reveal" id="comparar" aria-labelledby="comparison-title">
+      <div class="section-topline"><p class="eyebrow">PONER EN PERSPECTIVA</p><span>COMPARAR SIN JERARQUIZAR</span></div>
+      <div class="comparison-heading"><div><h2 id="comparison-title">Una misma ciudad,<br>distintas condiciones para estar.</h2><p>Acerca los recorridos entre sí. Cada círculo corresponde al nivel registrado de una misma variable.</p></div><label for="compare-category">Observar<select id="compare-category" aria-label="Variable para comparar"></select></label></div>
+      <div id="comparison-maps" class="comparison-maps"></div>
+      <p id="comparison-note" class="comparison-note" role="status"></p>
+    </section>
+
+    <section class="field-section" id="hallazgos" aria-labelledby="field-title">
+      <div class="wrap">
+        <div class="field-intro reveal"><div><p class="eyebrow">DEL RECORRIDO AL REGISTRO</p><h2 id="field-title">Lo que nos llevamos<br>de caminar la ciudad.</h2></div><p>Algunas condiciones atravesaron nuestros recorridos. Son observaciones del equipo y lecturas de esa experiencia; no hechos exclusivos de cada territorio.</p></div>
+        <div id="findings" class="findings"></div>
+        <section class="field-gallery" id="galeria" aria-labelledby="gallery-title">
+          <div class="gallery-heading"><div><p class="eyebrow">ARCHIVO FOTOGRÁFICO</p><h3 id="gallery-title">Fragmentos de nuestros recorridos.</h3><p>Una mirada a los espacios, recorridos y situaciones que formaron parte de nuestra observación.</p></div><div class="gallery-controls" role="group" aria-label="Navegar fotografías"><button type="button" id="photo-previous" aria-label="Fotografía anterior">←</button><span id="photo-counter" role="status" aria-live="polite" aria-atomic="true">00 / 00</span><button type="button" id="photo-next" aria-label="Fotografía siguiente">→</button></div></div>
+          <div id="photo-track" class="photo-track" role="region" aria-roledescription="carrusel" aria-label="Fotografías de los recorridos; usa las flechas del teclado o desliza" tabindex="0"></div>
+          <p id="gallery-status" class="gallery-note" role="status"></p>
+        </section>
+        <details class="archive" id="archivo">
+          <summary><span><span class="eyebrow">MATERIALES DEL EQUIPO</span><span class="archive-title">El archivo sonoro del equipo</span></span><span class="summary-arrow" aria-hidden="true">+</span></summary>
+          <div class="archive-content"><p id="archive-note" class="archive-note"></p><div class="sound-heading"><img src="iconos/sonido.svg" alt="" width="38" height="38"><div><h3>La ciudad también se escucha</h3><p>Elige una grabación para escucharla. Su nombre no establece una ubicación en el mapa.</p></div></div><div id="project-sound" class="map-sound-toolbar project-sound-player" hidden></div><div id="audio-library" class="audio-library"></div><p class="archive-source">Fuente: archivo fotográfico y sonoro proporcionado por el equipo de investigación. Ubicaciones y fechas de recorrido sin asociar.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section class="reflection wrap reveal" id="reflexion" aria-labelledby="reflection-title">
+      <p class="eyebrow">03 — REFLEXIONAR</p>
+      <span class="handwritten reflection-note">Llegar es apenas el comienzo.</span>
+      <h2 id="reflection-title">Estar no siempre<br>significa <span class="underline-mark">poder estar.</span></h2>
+      <div class="reflection-copy"><p>Durante nuestros recorridos observamos que llegar a un territorio no siempre implica contar con las condiciones necesarias para permanecer en él.</p><p>El acceso al transporte, el dinero disponible, los espacios de descanso, la seguridad percibida y los servicios existentes influyeron en nuestra experiencia.</p><p>Estas observaciones nos invitan a reconocer que la ciudad puede experimentarse de maneras diferentes según los recursos y necesidades de cada persona.</p></div>
+      <p class="closing-question">¿Todos podemos habitar un mismo<br>territorio de la misma manera?</p>
+      <a class="text-link" href="#explorar">Volver a mirar el mapa <span aria-hidden="true">↗</span></a>
     </section>
   </main>
+  <footer class="site-footer wrap"><a class="wordmark" href="#inicio">Entre estar<br>y <strong>PODER</strong> estar</a><p>Investigación, diseño de información y Small Data.<br>Alcaldía Cuauhtémoc · Ciudad de México.</p><a href="#inicio">Volver al inicio ↑</a></footer>
+  <noscript><p class="noscript">Activa JavaScript para seleccionar territorios y consultar los registros del atlas.</p></noscript>
+  <dialog id="photo-dialog" aria-labelledby="photo-caption"><button type="button" id="close-photo" aria-label="Cerrar fotografía">Cerrar ×</button><img id="photo-full" alt=""><p id="photo-caption"></p></dialog>
 </body>
 </html>
