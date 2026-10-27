@@ -38,7 +38,7 @@
       </div>
       <figure class="hero-art">
         <div class="hero-map-stage">
-          <div class="hero-map-frame"><img class="hero-map" src="assets/mapa-territorial.webp" width="299" height="300" alt="Mapa general de Cuauhtémoc con ocho divisiones territoriales y sus colores originales." fetchpriority="high"><div id="hero-data-points" class="hero-data-points" aria-label="Niveles de Small Data con ubicación documentada"></div></div>
+          <div class="hero-map-frame"><img class="hero-map" src="assets/mapa-territorial.webp" width="299" height="300" alt="Mapa general de Cuauhtémoc con ocho divisiones territoriales y sus colores originales." fetchpriority="high"><div id="hero-data-points" class="hero-data-points" aria-label="Puntos de Small Data; los registros gráficos tienen una distribución esquemática"></div></div>
           <a class="map-category map-category-green" href="#simbolos" aria-label="Conocer el símbolo de áreas verdes"><img src="iconos/área-verde.svg" width="66" height="66" alt=""></a>
           <a class="map-category map-category-money" href="#simbolos" aria-label="Conocer el símbolo de consumo"><img src="iconos/dinerito.svg" width="66" height="66" alt=""></a>
           <a class="map-category map-category-care" href="#simbolos" aria-label="Conocer el símbolo de precaución"><img src="iconos/cuidado.svg" width="66" height="66" alt=""></a>
@@ -105,6 +105,7 @@
         <figure class="overview-figure reveal">
           <div class="map-wrap" id="map-wrap">
             <img id="general-map" src="assets/mapa-territorial.webp" width="299" height="300" alt="Mapa territorial de Cuauhtémoc. Selecciona una zona de color o uno de los ocho puntos para explorarla.">
+            <div id="overview-data-points" class="observation-point-layer" aria-label="Registros gráficos de Small Data; distribución esquemática"></div>
             <div id="map-points"></div>
           </div>
           <div id="map-labels" aria-hidden="true"></div>
@@ -123,6 +124,7 @@
             <div id="map-sound" class="map-sound-toolbar" hidden></div>
             <div id="scene-visual" class="scene-visual" aria-busy="false">
               <img id="scene-image" src="mapas_nvos/tlatelolco.png" width="1254" height="1254" alt="Mapa ilustrado de Tlatelolco" loading="lazy">
+              <div id="scene-data-points" class="observation-point-layer" aria-label="Registros gráficos del territorio; distribución esquemática"></div>
               <div id="hotspots" class="hotspots"></div>
               <svg id="annotation-connector" class="annotation-connector" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" hidden><line id="annotation-line" x1="0" y1="0" x2="0" y2="0"/></svg>
               <div id="annotation" class="annotation" role="region" aria-label="Anotación de campo" hidden></div>
@@ -138,7 +140,7 @@
               <p class="motion-note">Los pulsos señalan registros disponibles para consultar.</p>
             </section>
             <p id="territory-sound-note" class="territory-sound-note" hidden>Sin grabación territorial asociada. <a href="#archivo">Escuchar el archivo general ↗</a></p>
-            <p class="scene-caption">Ilustración original del equipo. Solo las observaciones con ubicación documentada se colocan sobre un lugar del mapa.</p>
+            <p class="scene-caption">Ilustración original del equipo. Los círculos de la lámina tienen una distribución esquemática, pendiente de validar; no señalan ubicaciones geográficas exactas.</p>
           </div>
           <aside class="data-panel" aria-labelledby="data-title">
             <p class="eyebrow">CUADERNO DE RECORRIDO</p>

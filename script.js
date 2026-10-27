@@ -1,5 +1,6 @@
 import { HoldToListen, recordingsForTerritory, projectRecordings, audioFile, formatDuration } from './territorial-audio.mjs';
 import { mountPhotoCarousel } from './field-gallery.mjs';
+import { graphicMapPoints, territorialMapPoints, GRAPHIC_SIZES, GRAPHIC_LABELS } from './map-observations.mjs';
 import { VARIABLE_ORDER, LEVEL_WIDTHS, hasLevel, datumFor, statusLabel, levelLabel, meaningFor, validateDocument, generalMapPoints } from './small-data.mjs';
 
 'use strict';
@@ -294,6 +295,61 @@ function buildHeroPoints(){
     button.addEventListener('click',()=>show(true));button.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse'&&!state.levelAnnotation)show(false);});
     layer.append(button);
   }
+  renderGraphicPoints(layer);
+  renderGraphicPoints($('#overview-data-points'));
+}
+function renderGraphicPoints(layer, territoryId = null) {
+  // Remove only this source's overlay; never change a base raster or real datum.
+  layer.querySelectorAll('.observation-map-point').forEach(point => point.remove());
+  for (const [index, point] of graphicMapPoints(state.data, state.graphicData, state.smallData, territoryId).entries()) {
+    const {record, position, territory} = point;
+    const category = categoryById(record.variable);
+    const button = el('button', 'observation-map-point'); button.type = 'button';
+    button.dataset.record = record.id; button.dataset.variable = record.variable; button.dataset.size = record.tamano;
+    button.style.left = `${position.x}%`; button.style.top = `${position.y}%`;
+    button.style.setProperty('--point-size', `${GRAPHIC_SIZES[record.tamano]}%`);
+    button.style.setProperty('--category', category.color);
+    button.style.setProperty('--point-delay', `${Math.min(index * .045, .6)}s`);
+    button.setAttribute('aria-label', `${category.nombre}. ${GRAPHIC_LABELS[record.tamano]}. ${territory.nombre}. Registro gráfico pendiente de validar; posición esquemática.`);
+    button.setAttribute('aria-expanded', 'false');
+    button.title = `${category.nombre} · ${GRAPHIC_LABELS[record.tamano]} en la referencia gráfica`;
+    button.addEventListener('click', () => openGraphicAnnotation(point, category, button, territoryId ? $('#scene-visual') : layer.id === 'overview-data-points' ? $('#map-wrap') : $('#hero-observation-notes')));
+    layer.append(button);
+  }
+}
+function renderTerritorialLevelPoints(t) {
+  const layer = $('#scene-data-points');
+  for (const point of territorialMapPoints(state.data, state.smallData, t.id)) {
+    const category = categoryById(point.variable), button = el('button', 'observation-map-point'); button.type = 'button';
+    button.dataset.record = `nivel-${t.id}-${point.variable}`; button.dataset.variable = point.variable;
+    button.style.left = `${point.position.x}%`; button.style.top = `${point.position.y}%`;
+    button.style.setProperty('--point-size', `${Object.values(GRAPHIC_SIZES)[point.datum.nivel - 1]}%`);
+    button.style.setProperty('--category', category.color);
+    button.setAttribute('aria-label', `${category.nombre}: ${levelLabel(point.datum)}. ${statusLabel(point.datum)}.`);
+    button.setAttribute('aria-expanded', 'false');
+    if (point.position.integrado_en_imagen) button.style.background = 'transparent';
+    button.addEventListener('click', () => openLevelAnnotation(point.datum, category, button, $('#map-records')));
+    layer.append(button);
+  }
+}
+function openGraphicAnnotation(point, category, trigger, placement) {
+  const same = state.levelAnnotation?.trigger === trigger;
+  closeAnnotation(); closeLevelAnnotation(); if (same) return;
+  const panel = el('div', 'level-annotation graphic-annotation'); panel.id = 'level-annotation';
+  panel.setAttribute('role', 'region'); panel.setAttribute('aria-label', `Registro gráfico de ${category.nombre}`);
+  const close = el('button', 'annotation-close', 'Cerrar ×'); close.type = 'button';
+  close.setAttribute('aria-label', 'Cerrar registro territorial'); close.addEventListener('click', () => closeLevelAnnotation(true));
+  panel.append(close, el('h4', '', category.nombre), el('p', 'datum-territory', point.territory.nombre),
+    el('p', 'registered-level', `${GRAPHIC_LABELS[point.record.tamano]} en la referencia gráfica`),
+    el('p', '', 'Registro gráfico pendiente de validación. El color y el tamaño se transcriben de la lámina del equipo; no constituyen una valoración definitiva de todo el territorio.'),
+    el('p', 'source-detail', 'Distribución esquemática: este punto no señala una ubicación geográfica exacta.'),
+    el('p', 'source-detail', `Origen: ${point.source.titulo}.`));
+  if (localResource(point.source.archivo)) {
+    const link = el('a', 'source-detail reference-link', 'Consultar la lámina original ↗'); link.href = point.source.archivo; panel.append(link);
+  }
+  placement.append(panel); state.levelAnnotation = {panel, trigger};
+  trigger.setAttribute('aria-expanded', 'true'); trigger.setAttribute('aria-controls', panel.id);
+  close.focus({preventScroll:true});
 }
 function buildTerritories() {
   const list = $('#territory-list');
@@ -495,6 +551,7 @@ async function selectTerritory(id, scrollToDetail=false) {
   document.querySelectorAll('[data-territory]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.territory===id)));
   const visual=$('#scene-visual');visual.classList.add('is-changing');visual.setAttribute('aria-busy','true');
   $('.data-panel').classList.add('is-changing');$('#hotspots').replaceChildren();
+  $('#scene-data-points').replaceChildren();
   if(scrollToDetail)$('#recorrido').scrollIntoView({behavior:scrollBehavior(),block:'start'});
   const next=new Image();next.src=scene.imagen;
   try {
@@ -502,6 +559,8 @@ async function selectTerritory(id, scrollToDetail=false) {
     if(revision!==state.change)return;
     const image=$('#scene-image');image.src=scene.imagen;image.alt=scene.alt;image.width=scene.ancho;image.height=scene.alto;image.hidden=false;$('#empty-scene').hidden=true;
     renderHotspots(t,scene);
+    renderGraphicPoints($('#scene-data-points'), t.id);
+    renderTerritorialLevelPoints(t);
   }catch{
     if(revision!==state.change)return;
     $('#scene-image').hidden=true;$('#empty-scene').hidden=false;
@@ -623,6 +682,11 @@ async function initialize() {
     const response=await fetch('data/territorios.json',{cache:'no-cache'});if(!response.ok)throw new Error(`HTTP ${response.status}`);
     state.data=await response.json();
     if(!Array.isArray(state.data.territorios)||state.data.territorios.length!==8)throw new Error('Faltan territorios');
+    try {
+      const pointsResponse = await fetch('data/puntos_small_data_graficos.json', {cache:'no-cache'});
+      if (!pointsResponse.ok) throw new Error('No se pudo leer la transcripción gráfica.');
+      state.graphicData = await pointsResponse.json();
+    } catch (error) { state.graphicData = null; console.warn('Puntos gráficos:', error.message); }
     const notice=$('#small-data-status');
     try {
       const levelsResponse=await fetch('data/territorios_small_data_preliminar.json',{cache:'no-cache'});

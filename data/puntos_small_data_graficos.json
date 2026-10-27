@@ -1,0 +1,866 @@
+{
+  "version": 1,
+  "estado": "transcripcion_grafica_pendiente",
+  "nota": "Círculos transcritos de la lámina aportada por el equipo el 26 de octubre de 2026. Su tamaño se lee de la representación gráfica; no completa ni sustituye las valoraciones territoriales definitivas. La distribución en los mapas de la landing es esquemática, autorizada por el equipo; no indica una ubicación geográfica exacta.",
+  "fuentes": {
+    "lamina-equipo": {
+      "titulo": "Lámina de investigación del equipo · referencia adjunta del 26 de octubre de 2026",
+      "archivo": "assets/fuentes/lamina-small-data.jpeg",
+      "sha256": "aa67b3a394307fb8b8a71e18cf9bb7b04267c474f641b505bb73c791b9684ae7",
+      "ancho": 1600,
+      "alto": 1041
+    }
+  },
+  "puntos": [
+    {
+      "id": "lamina-santa-maria-costo",
+      "territorio": "santa-maria",
+      "variable": "costo",
+      "tamano": "grande",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 939,
+        "y_px": 413,
+        "diametro_aproximado_px": 29
+      },
+      "mapa_general": {
+        "x": 36,
+        "y": 17,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 29,
+        "y": 45,
+        "imagen": "mapas_nvos/stamaria-laribera.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-santa-maria-transporte",
+      "territorio": "santa-maria",
+      "variable": "transporte",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 980,
+        "y_px": 322,
+        "diametro_aproximado_px": 28
+      },
+      "mapa_general": {
+        "x": 47,
+        "y": 27,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 73,
+        "y": 34,
+        "imagen": "mapas_nvos/stamaria-laribera.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-santa-maria-comodidad",
+      "territorio": "santa-maria",
+      "variable": "comodidad",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 967,
+        "y_px": 365,
+        "diametro_aproximado_px": 27
+      },
+      "mapa_general": {
+        "x": 34,
+        "y": 34,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 44,
+        "y": 69,
+        "imagen": "mapas_nvos/stamaria-laribera.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-santa-maria-seguridad",
+      "territorio": "santa-maria",
+      "variable": "seguridad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 949,
+        "y_px": 323,
+        "diametro_aproximado_px": 10
+      },
+      "mapa_general": {
+        "x": 49,
+        "y": 14,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 78,
+        "y": 77,
+        "imagen": "mapas_nvos/stamaria-laribera.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-tlatelolco-costo",
+      "territorio": "tlatelolco",
+      "variable": "costo",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1038,
+        "y_px": 362,
+        "diametro_aproximado_px": 23
+      },
+      "mapa_general": {
+        "x": 62,
+        "y": 12,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 76,
+        "y": 41,
+        "imagen": "mapas_nvos/tlatelolco.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-tlatelolco-transporte",
+      "territorio": "tlatelolco",
+      "variable": "transporte",
+      "tamano": "grande",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1089,
+        "y_px": 321,
+        "diametro_aproximado_px": 41
+      },
+      "mapa_general": {
+        "x": 65,
+        "y": 26,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 47,
+        "y": 77,
+        "imagen": "mapas_nvos/tlatelolco.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-tlatelolco-comodidad",
+      "territorio": "tlatelolco",
+      "variable": "comodidad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1068,
+        "y_px": 291,
+        "diametro_aproximado_px": 14
+      },
+      "mapa_general": {
+        "x": 59,
+        "y": 35,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 32,
+        "y": 52,
+        "imagen": "mapas_nvos/tlatelolco.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-tlatelolco-seguridad",
+      "territorio": "tlatelolco",
+      "variable": "seguridad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1045,
+        "y_px": 306,
+        "diametro_aproximado_px": 10
+      },
+      "mapa_general": {
+        "x": 53,
+        "y": 23,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 21,
+        "y": 68,
+        "imagen": "mapas_nvos/tlatelolco.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-tlatelolco-permanencia",
+      "territorio": "tlatelolco",
+      "variable": "permanencia",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1071,
+        "y_px": 359,
+        "diametro_aproximado_px": 27
+      },
+      "mapa_general": {
+        "x": 69,
+        "y": 19,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 66,
+        "y": 58,
+        "imagen": "mapas_nvos/tlatelolco.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-morelos-costo",
+      "territorio": "morelos",
+      "variable": "costo",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1340,
+        "y_px": 347,
+        "diametro_aproximado_px": 19
+      },
+      "mapa_general": {
+        "x": 86,
+        "y": 17,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 34,
+        "y": 49,
+        "imagen": "mapas_nvos/morelor-peralvillo.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-morelos-permanencia",
+      "territorio": "morelos",
+      "variable": "permanencia",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1262,
+        "y_px": 199,
+        "diametro_aproximado_px": 10
+      },
+      "mapa_general": {
+        "x": 80,
+        "y": 8,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 70,
+        "y": 31,
+        "imagen": "mapas_nvos/morelor-peralvillo.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-morelos-comodidad",
+      "territorio": "morelos",
+      "variable": "comodidad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1334,
+        "y_px": 326,
+        "diametro_aproximado_px": 11
+      },
+      "mapa_general": {
+        "x": 92,
+        "y": 21,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 50,
+        "y": 76,
+        "imagen": "mapas_nvos/morelor-peralvillo.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-morelos-seguridad",
+      "territorio": "morelos",
+      "variable": "seguridad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1323,
+        "y_px": 310,
+        "diametro_aproximado_px": 8
+      },
+      "mapa_general": {
+        "x": 81,
+        "y": 29,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 78,
+        "y": 65,
+        "imagen": "mapas_nvos/morelor-peralvillo.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-juarez-costo",
+      "territorio": "juarez",
+      "variable": "costo",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 966,
+        "y_px": 491,
+        "diametro_aproximado_px": 28
+      },
+      "mapa_general": {
+        "x": 27,
+        "y": 43,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 27,
+        "y": 42,
+        "imagen": "mapas_nvos/juarez-san-rafael.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-juarez-transporte",
+      "territorio": "juarez",
+      "variable": "transporte",
+      "tamano": "grande",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1000,
+        "y_px": 478,
+        "diametro_aproximado_px": 36
+      },
+      "mapa_general": {
+        "x": 41,
+        "y": 45,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 74,
+        "y": 32,
+        "imagen": "mapas_nvos/juarez-san-rafael.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-juarez-comodidad",
+      "territorio": "juarez",
+      "variable": "comodidad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 991,
+        "y_px": 504,
+        "diametro_aproximado_px": 11
+      },
+      "mapa_general": {
+        "x": 19,
+        "y": 55,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 46,
+        "y": 74,
+        "imagen": "mapas_nvos/juarez-san-rafael.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-juarez-seguridad",
+      "territorio": "juarez",
+      "variable": "seguridad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 947,
+        "y_px": 510,
+        "diametro_aproximado_px": 11
+      },
+      "mapa_general": {
+        "x": 40,
+        "y": 59,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 79,
+        "y": 74,
+        "imagen": "mapas_nvos/juarez-san-rafael.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-juarez-permanencia",
+      "territorio": "juarez",
+      "variable": "permanencia",
+      "tamano": "grande",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 998,
+        "y_px": 537,
+        "diametro_aproximado_px": 33
+      },
+      "mapa_general": {
+        "x": 32,
+        "y": 53,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 66,
+        "y": 54,
+        "imagen": "mapas_nvos/juarez-san-rafael.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-centro-costo",
+      "territorio": "centro",
+      "variable": "costo",
+      "tamano": "grande",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1337,
+        "y_px": 411,
+        "diametro_aproximado_px": 31
+      },
+      "mapa_general": {
+        "x": 82,
+        "y": 42,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 32,
+        "y": 42,
+        "imagen": "mapas_nvos/centro.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-centro-transporte",
+      "territorio": "centro",
+      "variable": "transporte",
+      "tamano": "grande",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1299,
+        "y_px": 412,
+        "diametro_aproximado_px": 28
+      },
+      "mapa_general": {
+        "x": 87,
+        "y": 56,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 77,
+        "y": 34,
+        "imagen": "mapas_nvos/centro.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-centro-comodidad",
+      "territorio": "centro",
+      "variable": "comodidad",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1306,
+        "y_px": 450,
+        "diametro_aproximado_px": 27
+      },
+      "mapa_general": {
+        "x": 76,
+        "y": 48,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 47,
+        "y": 77,
+        "imagen": "mapas_nvos/centro.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-centro-seguridad",
+      "territorio": "centro",
+      "variable": "seguridad",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1176,
+        "y_px": 511,
+        "diametro_aproximado_px": 18
+      },
+      "mapa_general": {
+        "x": 91,
+        "y": 34,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 77,
+        "y": 74,
+        "imagen": "mapas_nvos/centro.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-centro-permanencia",
+      "territorio": "centro",
+      "variable": "permanencia",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1334,
+        "y_px": 478,
+        "diametro_aproximado_px": 29
+      },
+      "mapa_general": {
+        "x": 73,
+        "y": 62,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 64,
+        "y": 55,
+        "imagen": "mapas_nvos/centro.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-esperanza-costo",
+      "territorio": "esperanza",
+      "variable": "costo",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1235,
+        "y_px": 774,
+        "diametro_aproximado_px": 21
+      },
+      "mapa_general": {
+        "x": 89,
+        "y": 84,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 29,
+        "y": 46,
+        "imagen": "mapas_nvos/esperanza-buenosaires.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-esperanza-comodidad",
+      "territorio": "esperanza",
+      "variable": "comodidad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1241,
+        "y_px": 747,
+        "diametro_aproximado_px": 10
+      },
+      "mapa_general": {
+        "x": 79,
+        "y": 91,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 70,
+        "y": 35,
+        "imagen": "mapas_nvos/esperanza-buenosaires.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-esperanza-seguridad",
+      "territorio": "esperanza",
+      "variable": "seguridad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1258,
+        "y_px": 742,
+        "diametro_aproximado_px": 13
+      },
+      "mapa_general": {
+        "x": 88,
+        "y": 94,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 66,
+        "y": 74,
+        "imagen": "mapas_nvos/esperanza-buenosaires.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-obrera-costo",
+      "territorio": "obrera",
+      "variable": "costo",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1172,
+        "y_px": 658,
+        "diametro_aproximado_px": 26
+      },
+      "mapa_general": {
+        "x": 62,
+        "y": 75,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 29,
+        "y": 43,
+        "imagen": "mapas_nvos/obrera-doctores.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-obrera-transporte",
+      "territorio": "obrera",
+      "variable": "transporte",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1202,
+        "y_px": 611,
+        "diametro_aproximado_px": 16
+      },
+      "mapa_general": {
+        "x": 71,
+        "y": 85,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 73,
+        "y": 35,
+        "imagen": "mapas_nvos/obrera-doctores.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-obrera-permanencia",
+      "territorio": "obrera",
+      "variable": "permanencia",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1252,
+        "y_px": 636,
+        "diametro_aproximado_px": 13
+      },
+      "mapa_general": {
+        "x": 57,
+        "y": 88,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 66,
+        "y": 73,
+        "imagen": "mapas_nvos/obrera-doctores.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-roma-costo",
+      "territorio": "roma",
+      "variable": "costo",
+      "tamano": "grande",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1053,
+        "y_px": 657,
+        "diametro_aproximado_px": 39
+      },
+      "mapa_general": {
+        "x": 22,
+        "y": 74,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 25,
+        "y": 47,
+        "imagen": "mapas_nvos/roma-condesa.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-roma-transporte",
+      "territorio": "roma",
+      "variable": "transporte",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1054,
+        "y_px": 694,
+        "diametro_aproximado_px": 29
+      },
+      "mapa_general": {
+        "x": 13,
+        "y": 85,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 74,
+        "y": 35,
+        "imagen": "mapas_nvos/roma-condesa.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-roma-comodidad",
+      "territorio": "roma",
+      "variable": "comodidad",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1084,
+        "y_px": 675,
+        "diametro_aproximado_px": 24
+      },
+      "mapa_general": {
+        "x": 36,
+        "y": 85,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 46,
+        "y": 77,
+        "imagen": "mapas_nvos/roma-condesa.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-roma-seguridad",
+      "territorio": "roma",
+      "variable": "seguridad",
+      "tamano": "pequeno",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1078,
+        "y_px": 697,
+        "diametro_aproximado_px": 10
+      },
+      "mapa_general": {
+        "x": 26,
+        "y": 92,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 78,
+        "y": 74,
+        "imagen": "mapas_nvos/roma-condesa.png",
+        "precision": "esquematica"
+      }
+    },
+    {
+      "id": "lamina-roma-permanencia",
+      "territorio": "roma",
+      "variable": "permanencia",
+      "tamano": "mediano",
+      "estado": "transcripcion_grafica_pendiente",
+      "fuente": "lamina-equipo",
+      "marca_en_fuente": {
+        "x_px": 1087,
+        "y_px": 626,
+        "diametro_aproximado_px": 28
+      },
+      "mapa_general": {
+        "x": 37,
+        "y": 68,
+        "imagen": "assets/mapa-territorial.webp",
+        "precision": "esquematica"
+      },
+      "mapa_territorial": {
+        "x": 64,
+        "y": 54,
+        "imagen": "mapas_nvos/roma-condesa.png",
+        "precision": "esquematica"
+      }
+    }
+  ]
+}
