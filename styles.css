@@ -290,6 +290,8 @@ button.datum-button:hover,button.datum-button[aria-expanded=true] { background:v
 .hero-map-frame { position:absolute;width:84%;aspect-ratio:299/300;left:6%;top:5%;transform:rotate(-5deg);animation:map-enter 1.2s var(--ease) both; }
 .hero-map-frame .hero-map { position:static;display:block;width:100%;height:auto;object-fit:contain;transform:none;animation:none; }
 .hero-data-points { position:absolute;inset:0; }
+.hero h1.hero-image-title { margin-left:0;line-height:1; }
+.hero-title-art { display:block;width:100%;height:auto;animation:title-enter .9s var(--ease) both; }
 .observation-point-layer { position:absolute;inset:0;pointer-events:none;z-index:1; }
 .observation-map-point { position:absolute;width:var(--point-size);aspect-ratio:1;padding:0;border:0;border-radius:50%;background:var(--category);transform:translate(-50%,-50%);pointer-events:auto;z-index:1;animation:observation-point-arrive .55s var(--ease) var(--point-delay,0s) both; }
 .observation-map-point::after { content:'';position:absolute;inset:-5px;border-radius:50%; }
